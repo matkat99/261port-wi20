@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: green;
+      }
+      form {
+        background-color: white;
+        padding: 1em;
+      }
+      .contactForm {
+        max-width: 550px;
+        margin: auto;
+      }
+      label {
+        display: block;
+      }
+      input,
+      textarea {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" class="contactForm">
+      <p>
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter Name here" id="name" />
+      </p>
+      <p>
+        <label for="email">email</label>
+        <input type="text" placeholder="Enter email here" id="email" />
+      </p>
+      <p>
+        <label for="message">Message</label>
+        <textarea id="message">default text</textarea>
+      </p>
+      <button type="submit">Send Message</button>
+    </form>
+  </body>
+</html>
