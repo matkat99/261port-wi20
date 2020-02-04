@@ -87,10 +87,15 @@ function buildHikeLight(hike) {
                     <p>${hike.difficulty}</p>
                 </div>
         </div>`;
-  item.addEventListener("touchend", e => {
-    console.log(e.currentTarget.children[0]);
-    e.currentTarget.querySelector("h2");
-  });
+  item.addEventListener(
+    "touchend",
+    function(e) {
+      console.log(e.currentTarget);
+      console.log(this);
+      e.currentTarget.querySelector("h2");
+    },
+    { once: true }
+  );
   return item;
 }
 function buildList() {
@@ -99,3 +104,13 @@ function buildList() {
   });
 }
 buildList();
+
+const calc = {
+  "operand 1": 0,
+  operand2: 0,
+  result: 0,
+
+  add: function() {},
+  getOperand: () => {}
+};
+calc["operand 1"] = 2;
