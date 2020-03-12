@@ -1,4 +1,4 @@
-import { qs, qsa, bindTouch } from "./utilities.js";
+import { qs, qsa, bindTouch } from "../utilities.js";
 let toDoList = [];
 
 function saveTodo(toDo) {
